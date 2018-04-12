@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+</head>
+
+<script>
+
+function c() {
+   var ptr1 = document.getElementById( "n1" );
+   var ptr2 = document.getElementById( "n2" );
+   var ptr3 = document.getElementById( "n3" );
+   var ptr4 = document.getElementById( "n4" );
+   
+
+   
+   var ctrlr = document.getElementById("opt");
+   
+   if (ctrlr.value == "one")  {
+   		ptr1.style.display = "none";
+		ptr2.style.display = "none";
+		ptr3.style.display = "none";
+		ptr4.style.display = "none";
+
+   }
+   
+   else if (ctrlr.value == "two"){
+   		ptr1.style.display = "block";
+		ptr2.style.display = "none";
+		ptr3.style.display = "none";
+		ptr4.style.display = "none";
+		
+
+   }
+   
+   else if (ctrlr.value == "three"){
+   		ptr1.style.display = "block";
+		ptr2.style.display = "block";
+		ptr3.style.display = "none";
+		ptr4.style.display = "none";
+
+   }
+
+   else if (ctrlr.value == "four"){
+   		ptr1.style.display = "block";
+		ptr2.style.display = "block";
+		ptr3.style.display = "block";
+		ptr4.style.display = "none";
+		
+
+   }
+   
+   else if (ctrlr.value == "five"){
+   		ptr1.style.display = "block";
+		ptr2.style.display = "block";
+		ptr3.style.display = "block";
+		ptr4.style.display = "block";
+		
+
+   }
+   
+}
+
+</script>
+
+<style>
+	#n1 {
+		display: none; 
+	}
+	
+	#n2 {
+		display: none; 
+	}
+
+	#n3 {
+		display: none; 
+	}
+	
+	#n4 {
+		display: none; 
+	}
+	
+	fieldset { 
+		margin: auto; width: 60% ; background: #80b0fc ;  color: black;
+		font-family: verdana;
+		border: 1px solid #666;
+		border-radius: 8px;
+	}
+	
+	#b1 {
+		display: block; 
+	}
+	#b2 {
+		display: none; 
+	}	
+	#b3 {
+		display: none; 
+	}	
+	#b4 {
+		display: none; 
+	}
+	#b5 {
+		display: none; 
+	}
+
+	
+</style>
+
+
+<body>
+<form action = "register.php">
+
+				How many people? <select name="opt" id= "opt"  onchange = c()> 
+					<option value="one"> 1 </option>
+					<option value="two"> 2 </option>
+					<option value="three"> 3 </option>
+					<option value="four"> 4 </option>
+					<option value="five"> 5 </option>
+				</select> 
+			
+				<div class = "one"  style = "margin = center-left;">
+				
+				<h1>Person 1</h1>
+					Email <input type=text name ='email1'  placeholder="Your Email"  autofocus   autocomplete=off><br><br>
+					First and Last Name <input type=text name ='flname1' placeholder="Your First and Last Name"   autocomplete=off ><br><br>
+					Street Address <input type=text name ='address1' placeholder="Your Address"   autocomplete=off ><br><br>
+					City <input type=text name ='city1' placeholder="Your City"   autocomplete=off ><br><br>
+					State <input type=text name ='state1' placeholder="Your State"   autocomplete=off ><br><br>
+					Zipcode <input type=text name ='zip1' placeholder="Your Zipcode"   autocomplete=off ><br><br>
+					Age <input type=text name ='age1' placeholder="Your Age"   autocomplete=off ><br><br>
+					T-Shirt Size<select name="tchoice1" id = "choice" onchange = c()> 
+						<option selected value="choice"> choose an option </option>
+						<option value="youth small"> Youth Small </option>
+						<option value="youth medium"> Youth Medium </option>
+						<option value="youth large"> Youth Large </option>
+						<option value="adult small"> Adult Small </option>
+						<option value="adult medium"> Adult Medium </option>
+						<option value="adult large"> Adult Large </option>
+						<option value="adult xlarge"> Adult XL</option>
+						<option value="adult 2xlarge"> Adult 2XL </option>
+					</select>
+					Legal mumbo jumbo <input type = checkbox name ="legal1"  >
+
+				</div>
+				
+				<div class = "two" id = "n1" style = "margin = center-left;">
+				<h1>Person 2</h1>
+
+					Email <input type=text name ='email2'  placeholder="Your Email"  autocomplete=off><br><br>
+					First and Last Name <input type=text name ='flname2' placeholder="Your First and Last Name"   autocomplete=off ><br><br>
+					Street Address <input type=text name ='address2' placeholder="Your Address"   autocomplete=off ><br><br>
+					City <input type=text name ='city2' placeholder="Your City"   autocomplete=off ><br><br>
+					State <input type=text name ='state2' placeholder="Your State"   autocomplete=off ><br><br>
+					Zipcode <input type=text name ='zip2' placeholder="Your Zipcode"   autocomplete=off ><br><br>
+					Age <input type=text name ='age2' placeholder="Your Age"   autocomplete=off ><br><br>
+					T-Shirt Size<select name="tchoice2" id = "choice" onchange = c()> 
+						<option selected value="choice"> choose an option </option>
+						<option value="youth small"> Youth Small </option>
+						<option value="youth medium"> Youth Medium </option>
+						<option value="youth large"> Youth Large </option>
+						<option value="adult small"> Adult Small </option>
+						<option value="adult medium"> Adult Medium </option>
+						<option value="adult large"> Adult Large </option>
+						<option value="adult xlarge"> Adult XL</option>
+						<option value="adult 2xlarge"> Adult 2XL </option>	
+					</select>
+					Legal mumbo jumbo <input type = checkbox name ="legal2"  >
+				</div>
+				
+				<div class = "three" id = "n2"  style = "margin = center-left;">
+				<h1>Person 3</h1>
+					Email <input type=text name ='email3'  placeholder="Your Email"  autocomplete=off><br><br>
+					First and Last Name <input type=text name ='flname3' placeholder="Your First and Last Name"   autocomplete=off ><br><br>
+					Street Address <input type=text name ='address3' placeholder="Your Address"   autocomplete=off ><br><br>
+					City <input type=text name ='city3' placeholder="Your City"   autocomplete=off ><br><br>
+					State <input type=text name ='state3' placeholder="Your State"   autocomplete=off ><br><br>
+					Zipcode <input type=text name ='zip3' placeholder="Your Zipcode"   autocomplete=off ><br><br>
+					Age <input type=text name ='age3' placeholder="Your Age"   autocomplete=off ><br><br>
+					T-Shirt Size<select name="tchoice3" id = "choice" onchange = c()> 
+						<option selected value="choice"> choose an option </option>
+						<option value="youth small"> Youth Small </option>
+						<option value="youth medium"> Youth Medium </option>
+						<option value="youth large"> Youth Large </option>
+						<option value="adult small"> Adult Small </option>
+						<option value="adult medium"> Adult Medium </option>
+						<option value="adult large"> Adult Large </option>
+						<option value="adult xlarge"> Adult XL</option>
+						<option value="adult 2xlarge"> Adult 2XL </option>
+					</select>
+					Legal mumbo jumbo <input type = checkbox name ="legal3"  >
+
+				</div>
+
+				<div class = "four" id = "n3" style = "margin = center-left;">
+					<h1>Person 4</h1>
+					Email <input type=text name ='email4'  placeholder="Your Email"  autocomplete=off><br><br>
+					First and Last Name <input type=text name ='flname4' placeholder="Your First and Last Name"   autocomplete=off ><br><br>
+					Street Address <input type=text name ='address4' placeholder="Your Address"   autocomplete=off ><br><br>
+					City <input type=text name ='city4' placeholder="Your City"   autocomplete=off ><br><br>
+					State <input type=text name ='state4' placeholder="Your State"   autocomplete=off ><br><br>
+					Zipcode <input type=text name ='zip4' placeholder="Your Zipcode"   autocomplete=off ><br><br>
+					Age <input type=text name ='age4' placeholder="Your Age"   autocomplete=off ><br><br>
+					T-Shirt Size<select name="tchoice4" id = "choice" onchange = c()> 
+						<option selected value="choice"> choose an option </option>
+						<option value="youth small"> Youth Small </option>
+						<option value="youth medium"> Youth Medium </option>
+						<option value="youth large"> Youth Large </option>
+						<option value="adult small"> Adult Small </option>
+						<option value="adult medium"> Adult Medium </option>
+						<option value="adult large"> Adult Large </option>
+						<option value="adult xlarge"> Adult XL</option>
+						<option value="adult 2xlarge"> Adult 2XL </option>
+					</select>
+					Legal mumbo jumbo <input type = checkbox name ="legal4"  >
+
+					
+				</div>				
+				<div class = "five" id = "n4" style = "margin = center-left;">
+					<h1>Person 5</h1>
+					Email <input type=text name ='email5'  placeholder="Your Email"  autocomplete=off><br><br>
+					First and Last Name <input type=text name ='flname5' placeholder="Your First and Last Name"   autocomplete=off ><br><br>
+					Street Address <input type=text name ='address5' placeholder="Your Address"   autocomplete=off ><br><br>
+					City <input type=text name ='city5' placeholder="Your City"   autocomplete=off ><br><br>
+					State <input type=text name ='state5' placeholder="Your State"   autocomplete=off ><br><br>
+					Zipcode <input type=text name ='zip5' placeholder="Your Zipcode"   autocomplete=off ><br><br>
+					Age <input type=text name ='age5' placeholder="Your Age"   autocomplete=off ><br><br>
+					T-Shirt Size<select name="tchoice5" id = "choice" onchange = c()> 
+						<option selected value="choice"> choose an option </option>
+						<option value="youth small"> Youth Small </option>
+						<option value="youth medium"> Youth Medium </option>
+						<option value="youth large"> Youth Large </option>
+						<option value="adult small"> Adult Small </option>
+						<option value="adult medium"> Adult Medium </option>
+						<option value="adult large"> Adult Large </option>
+						<option value="adult xlarge"> Adult XL</option>
+						<option value="adult 2xlarge"> Adult 2XL </option>
+					</select>
+					Legal mumbo jumbo <input type = checkbox name ="legal5"  >
+
+				</div>		
+				
+				
+				
+				<br>
+				
+				<input type= submit id ="b1" value = "Proceed to payment 1">
+				
+				
+				
+				
+
+</form>
+
+<body>
+</html>
