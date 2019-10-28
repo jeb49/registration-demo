@@ -62,5 +62,4 @@ function getcheck ($name){
 
 	return $temp;
 }
-
 ?>

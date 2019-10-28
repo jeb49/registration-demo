@@ -66,7 +66,6 @@ else if ($choice == "two"){
 
 	$person2 = array (getdata("email2"), getdata("flname2"), getdata("address2"), getdata("city2"), getdata("state2"), getdata("zip2"), getdata("age2"), getdata("tchoice2"));
 	$p2Len = count($person2);
-
 	$lg2 = getcheck("legal2");
 
 	if (!$lg2) {
@@ -105,7 +104,6 @@ else if ($choice == "two"){
 
 else if ($choice == "three"){
     $check = true;
-
 	//do check
 	$person1 = array(getdata("email1"), getdata("flname1"), getdata("address1"), getdata("city1"), getdata("state1"), getdata("zip1"), getdata("age1"), getdata("tchoice1") );
 	$p1Len = count($person1);
@@ -121,14 +119,12 @@ else if ($choice == "three"){
 	if (!$lg3) {
 		$check = false;
 	}
-
 	for ($i = 0; $i < $p1Len; $i++){
 		if ($person1[$i] == "" ){
 			$check = false;
 			break;
 		}
 	}
-
 
 	for ($i = 0; $i < $p2Len; $i++){
 		 if ( $person2[$i] == "" ){
@@ -144,12 +140,10 @@ else if ($choice == "three"){
 		}
 	}
 
-
 	if ($check){
 	    insert($person1[0],$person1[1], $person1[2], $person1[3], $person1[4], $person1[5], $person1[6], $person1[7], $output);
 	    insert($person2[0],$person2[1], $person2[2], $person2[3], $person2[4], $person2[5], $person2[6], $person2[7], $output);
 	    insert($person3[0],$person3[1], $person3[2], $person3[3], $person3[4], $person3[5], $person3[6], $person3[7], $output);
-
 	    echo "Redirecting you to the payment page.";
 	    header('Refresh: 1; URL=p3.html');
 	}
@@ -180,14 +174,12 @@ else if ($choice == "four"){
 	if (!$lg4) {
 		$check = false;
 	}
-
 	for ($i = 0; $i < $p1Len; $i++){
 		if ($person1[$i]  == "" ){
 			$check = false;
 			break;
 		}
 	}
-
 	for ($i = 0; $i < $p2Len; $i++){
 		if ($person2[$i] == "" ){
 			$check = false;
@@ -201,7 +193,6 @@ else if ($choice == "four"){
 			break;
 		}
 	}
-
 	for ($i = 0; $i < $p4Len; $i++){
 		if ( $person4[$i] == "" ){
 			$check = false;
@@ -214,7 +205,6 @@ else if ($choice == "four"){
 	    insert($person2[0],$person2[1], $person2[2], $person2[3], $person2[4], $person2[5], $person2[6], $person2[7], $output);
 	    insert($person3[0],$person3[1], $person3[2], $person3[3], $person3[4], $person3[5], $person3[6], $person3[7], $output);
 	    insert($person4[0],$person4[1], $person4[2], $person4[3], $person4[4], $person4[5], $person4[6], $person4[7], $output);
-
 	    echo "Redirecting you to the payment page.";
 	    header('Refresh: 1; URL=p4.html');
 	}
@@ -271,7 +261,6 @@ else if ($choice == "five"){
 			break;
 		}
 	}
-
 	for ($i = 0; $i < $p4Len; $i++){
 		if ($person4[$i] == "" ){
 			$check = false;
@@ -285,14 +274,12 @@ else if ($choice == "five"){
 			break;
 		}
 	}
-
 	if ($check){
 	    insert($person1[0],$person1[1], $person1[2], $person1[3], $person1[4], $person1[5], $person1[6], $person1[7], $output);
 	    insert($person2[0],$person2[1], $person2[2], $person2[3], $person2[4], $person2[5], $person2[6], $person2[7], $output);
 	    insert($person3[0],$person3[1], $person3[2], $person3[3], $person3[4], $person3[5], $person3[6], $person3[7], $output);
 	    insert($person4[0],$person4[1], $person4[2], $person4[3], $person4[4], $person4[5], $person4[6], $person4[7], $output);
 	    insert($person5[0],$person5[1], $person5[2], $person5[3], $person5[4], $person5[5], $person5[6], $person5[7], $output);
-
 	    echo "Redirecting you to the payment page.";
 	    header('Refresh: 1; URL=p5.html');
 	}
@@ -302,7 +289,5 @@ else if ($choice == "five"){
 	    header('Refresh: 5; URL=page5.html');
 	}
 }
-
-
 
 ?>
