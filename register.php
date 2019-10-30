@@ -45,7 +45,7 @@ if ($choice == "one"){
 
 	if ($check){
 	    insert($person1[0], $person1[1], $person1[2], $person1[3], $person1[4], $person1[5], $person1[6], $person1[7], $output);
-	    echo "Redirecting you to the payment page.";
+	    echo "";
 	    header('Refresh: 1; URL=p1.html');
 	}
 	else{
@@ -91,7 +91,7 @@ else if ($choice == "two"){
     if ($check){
 	    insert($person1[0],$person1[1], $person1[2], $person1[3], $person1[4], $person1[5], $person1[6], $person1[7], $output);
 	    insert($person2[0],$person2[1], $person2[2], $person2[3], $person2[4], $person2[5], $person2[6], $person2[7], $output);
-	    echo "Redirecting you to the payment page.";
+	    echo "";
 	    header('Refresh: 1; URL=p2.html');
     }
     else {
@@ -205,7 +205,7 @@ else if ($choice == "four"){
 	    insert($person2[0],$person2[1], $person2[2], $person2[3], $person2[4], $person2[5], $person2[6], $person2[7], $output);
 	    insert($person3[0],$person3[1], $person3[2], $person3[3], $person3[4], $person3[5], $person3[6], $person3[7], $output);
 	    insert($person4[0],$person4[1], $person4[2], $person4[3], $person4[4], $person4[5], $person4[6], $person4[7], $output);
-	    echo "Redirecting you to the payment page.";
+	    echo "";
 	    header('Refresh: 1; URL=p4.html');
 	}
 	else {
@@ -280,7 +280,7 @@ else if ($choice == "five"){
 	    insert($person3[0],$person3[1], $person3[2], $person3[3], $person3[4], $person3[5], $person3[6], $person3[7], $output);
 	    insert($person4[0],$person4[1], $person4[2], $person4[3], $person4[4], $person4[5], $person4[6], $person4[7], $output);
 	    insert($person5[0],$person5[1], $person5[2], $person5[3], $person5[4], $person5[5], $person5[6], $person5[7], $output);
-	    echo "Redirecting you to the payment page.";
+	    echo "";
 	    header('Refresh: 1; URL=p5.html');
 	}
 	else {
