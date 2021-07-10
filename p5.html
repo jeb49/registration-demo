@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html> 
-<head>
-<title>Payment for five people </title>
-<script>
-	
-	function autoClick() {
-		document.forms["ppButton"].submit()
-	}
-	
-	window.onload = autoClick;
+<html>
+  <head>
+    <title>Payment for five people</title>
+    <script>
+      function autoClick() {
+        document.forms["ppButton"].submit();
+      }
 
-</script>
-</head>
-<body>
-	<p>Please wait one moment, redirecting you to Paypal.</p>
+      window.onload = autoClick;
+    </script>
+  </head>
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" id = "ppButton" method="post" target="_top">
-		 <input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="X2RM262KPC6MC">
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
+  <body>
+    <p>Please wait one moment, redirecting you to Paypal.</p>
 
-</body>
+    <form
+      action="https://www.paypal.com/cgi-bin/webscr"
+      id="ppButton"
+      method="post"
+      target="_top"
+    >
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="X2RM262KPC6MC" />
+      <img
+        alt=""
+        border="0"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+        width="1"
+        height="1"
+      />
+    </form>
+  </body>
 </html>

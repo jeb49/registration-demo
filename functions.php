@@ -8,11 +8,12 @@
 	result is trimmed with an empty string being returned.
 */
 
-function getdata ($name){
+function getdata($name)
+{
 	global $db;
-	$temp= $_GET [$name];
+	$temp = $_GET[$name];
 	$temp = mysqli_real_escape_string($db, $temp);
-	$temp2 = trim ($temp);
+	$temp2 = trim($temp);
 	return $temp2;
 }
 
@@ -22,13 +23,14 @@ function getdata ($name){
 	my email.
 */
 
-function insert ($email, $name, $address, $city, $state, $zip, $age, $tchoice, &$output){
+function insert($email, $name, $address, $city, $state, $zip, $age, $tchoice, &$output)
+{
 	//insert into db
 
 	global $db;
 
 	$t = "insert into REG values ('$email', '$name', '$address', '$city', '$state', '$zip', '$age', '$tchoice')";
-	($u = mysqli_query($db,$t)) or die (mysqli_error($db));
+	($u = mysqli_query($db, $t)) or die(mysqli_error($db));
 
 	//email pastor
 
@@ -55,11 +57,11 @@ function insert ($email, $name, $address, $city, $state, $zip, $age, $tchoice, &
 	value, this is the best option to deal with them.
 */
 
-function getcheck ($name){
+function getcheck($name)
+{
 	global $db;
-	$temp= isset($_GET [$name]);
+	$temp = isset($_GET[$name]);
 	$temp = mysqli_real_escape_string($db, $temp);
 
 	return $temp;
 }
-?>
